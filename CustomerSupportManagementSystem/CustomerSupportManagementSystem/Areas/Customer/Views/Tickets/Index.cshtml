@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Support Agent Dashboard";
+}
+
+<h2>Support Agent Dashboard</h2>
+<p>Welcome, Support Agent! Here are your assigned tickets.</p>
+
+<!-- Example of a list of assigned tickets -->
+<ul>
+    <li>
+        <a href="@Url.Action("ViewTicket", "SupportAgent", new { ticketId = 1 })">Ticket 1</a> - Status: In Progress
+    </li>
+    <li>
+        <a href="@Url.Action("ViewTicket", "SupportAgent", new { ticketId = 2 })">Ticket 2</a> - Status: Pending
+    </li>
+</ul>
+
